@@ -258,8 +258,14 @@ def generate_exponents(p, q, e):
     return n, e, d, phi
 
 if __name__ == "__main__":
+    # TODO: padding
+    # TODO: tests
+
     # p/q must unique primes, e is recommended to be small odd prime
     # p = 61; q = 53; e = 17; original_plaintext = "A" # ord("A") == chr(65), wikipedia example
+    
+    # p = 61; q = 53; e = None; original_plaintext = "B" # single char + small e + tight prime range may not be solvable
+    # p = None; q = None; e = 5; original_plaintext = "Hello World!" 
     p = None; q = None; e = 7; original_plaintext = "DEADBEEF"*4 # message length == sha-256 hexdigest
 
     encoding = "utf-8"
