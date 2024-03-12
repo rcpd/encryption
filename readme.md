@@ -1,0 +1,2 @@
+Home brewed implementations of common encryptions schemes with lots of supporting notes + documentation.
+This is intended for educational use only, there probably are bugs & faulty or insecure assumptions.
